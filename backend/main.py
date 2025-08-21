@@ -11,7 +11,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
+@app.get("/")
+def greeting():
+    return JSONResponse({"message": "Welcome To Coastal Seven AGENTIC SDLC"})
 @app.get("/hello")
 def read_hello():
     return JSONResponse({"message": "Hello from FastAPI Backend!"})
