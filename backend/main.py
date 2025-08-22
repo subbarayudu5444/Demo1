@@ -29,7 +29,7 @@ class Employee(BaseModel):
 # --------------------
 @app.get("/")
 def greeting():
-    return JSONResponse({"message": "Welcome To Coastal Seven AGENTIC SDLC"})
+    return JSONResponse({"message": "Welcome To Coastal Seven Employees Data"})
 
 # --------------------
 # In-memory database
